@@ -1,0 +1,92 @@
+:root {
+  --main: #37517e;
+}
+
+.hero {
+  background-color: var(--main);
+}
+
+nav a {
+  color: white !important;
+}
+
+.animate-img {
+  animation: img-move 1.5s linear infinite alternate;
+}
+
+@keyframes img-move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-img:hover {
+  animation-play-state: paused;
+}
+
+.brands img {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.brands img:hover {
+  filter: grayscale(0);
+}
+
+.text-blue {
+  color: var(--main) !important;
+}
+
+.bg-blue {
+  background-color: var(--main) !important;
+}
+
+.gray {
+  background-color: lightgray;
+  width: 100%;
+  margin: auto;
+  height: 2px;
+  position: relative;
+}
+
+.blue {
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: var(--bs-info);
+  margin: auto;
+}
+
+.w-max {
+  margin: auto;
+  width: max-content;
+}
+
+.bg-image {
+  background: linear-gradient(
+      to right,
+      rgba(52, 85, 137, 0.5),
+      rgba(78, 111, 161, 0.8)
+    ),
+    url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg")
+      fixed;
+}
+
+.hover-img {
+  overflow: hidden;
+}
+
+.hover-text {
+  transform: translateY(80px);
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hover-img:hover .hover-text {
+  transform: translate(0);
+}
